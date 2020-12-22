@@ -27,11 +27,11 @@ end)
 
 a:Button("SilentAim",function()
 getgenv().SelectedPart = "Head"
-getgenv().VisibiltyCheck = false
-getgenv().TargetESP = true
+getgenv().VisibiltyCheck = true
+getgenv().TargetESP = false
 getgenv().FOV = 35000000
 getgenv().CircleVisibility = true
-getgenv().Distance = 500
+getgenv().Distance = 500000
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Input", true))()
 end)
 
