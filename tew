@@ -135,7 +135,7 @@ end)
  
 Dust:Slider("Speed changer",{
     min = 10; -- min value of the slider
-    max = 50; -- max value of the slider
+    max = 30; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
     print(value)
