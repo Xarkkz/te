@@ -7,6 +7,8 @@ local b = w:CreateFolder("Arsenal") -- Creates the folder(U will put here your b
 local Dust = w:CreateFolder("Dust") -- Creates the folder(U will put here your buttons,etc)
 
 local a = w:CreateFolder("Assassin") -- Creates the folder(U will put here your buttons,etc)
+
+local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put here your buttons,etc)
  
 b:Label("Korke.ml",{
     TextSize = 25; -- Self Explaining
@@ -23,6 +25,36 @@ a:Button("Auto collect candy",function()
 workspace.Eggs.ChildAdded:connect(function(v)
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
+end)
+
+b:Button("silent aim",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/DUeHdyvk", true))()
+end)
+ 
+s:Button("body",function()
+    while true do
+wait()
+local A_1 =
+{
+[1] = "+BT1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+BT2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+BT3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
 end)
 
 a:Button("SilentAim",function()
