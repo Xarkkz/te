@@ -19,10 +19,6 @@ b:Label("Korke.ml",{
     
 }) 
  
-b:Button("silent aim",function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/DUeHdyvk", true))()
-end)
- 
 a:Button("Auto collect candy",function()
 workspace.Eggs.ChildAdded:connect(function(v)
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
