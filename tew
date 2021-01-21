@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+               local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
  
 local w = library:CreateWindow("Korke.ml") -- Creates the window
  
@@ -7,6 +7,8 @@ local b = w:CreateFolder("Arsenal") -- Creates the folder(U will put here your b
 local Dust = w:CreateFolder("Dust") -- Creates the folder(U will put here your buttons,etc)
 
 local a = w:CreateFolder("Assassin") -- Creates the folder(U will put here your buttons,etc)
+
+local n = w:CreateFolder("Admin") -- Creates the folder(U will put here your buttons,etc)
 
 local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put here your buttons,etc)
  
@@ -29,6 +31,10 @@ end)
 
 b:Button("silent aim",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/DUeHdyvk", true))()
+end)
+
+n:Button("Inf yeild",function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
 end)
  
  s:Button("psy",function()
