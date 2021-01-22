@@ -11,6 +11,18 @@ local a = w:CreateFolder("Assassin") -- Creates the folder(U will put here your 
 local n = w:CreateFolder("Admin") -- Creates the folder(U will put here your buttons,etc)
 
 local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put here your buttons,etc)
+
+local r = w:CreateFolder("Royalhigh") -- Creates the folder(U will put here your buttons,etc)
+
+r:Toggle("Toggle",function(bool)
+    shared.toggle = bool
+    for i,v in pairs(game.Workspace.DIAMONDS:GetDescendants()) do
+   if v.Name == "specialdiamond" or v.Name == "Pink Diamond" or v.Name == "Green Diamond" then
+       v.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+       wait(0.1)
+   end
+end
+end)
  
 b:Label("Korke.ml",{
     TextSize = 25; -- Self Explaining
