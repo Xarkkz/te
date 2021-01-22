@@ -14,7 +14,7 @@ local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put 
 
 local r = w:CreateFolder("Royalhigh") -- Creates the folder(U will put here your buttons,etc)
 
-r:Toggle("Toggle",function(bool)
+r:Toggle("Auto Daimonds",function(bool)
     shared.toggle = bool
     for i,v in pairs(game.Workspace.DIAMONDS:GetDescendants()) do
    if v.Name == "specialdiamond" or v.Name == "Pink Diamond" or v.Name == "Green Diamond" then
