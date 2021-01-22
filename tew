@@ -14,6 +14,141 @@ local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put 
 
 local r = w:CreateFolder("Royalhigh") -- Creates the folder(U will put here your buttons,etc)
 
+s:Toggle("Auto psy",function(bool)
+    shared.toggle = bool
+    while true do
+wait()
+local A_1 =
+{
+[1] = "+PP1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+PP2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+PP3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
+end)
+
+s:Toggle("Auto speed",function(bool)
+    shared.toggle = bool
+     while true do
+wait()
+local A_1 =
+{
+[1] = "+MS1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+MS2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+MS3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
+end)
+
+s:Toggle("Auto jump",function(bool)
+    shared.toggle = bool
+     while true do
+wait()
+local A_1 =
+{
+[1] = "+JF2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+JF3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+JF1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
+end)
+
+s:Toggle("Auto body",function(bool)
+    shared.toggle = bool
+    while true do
+wait()
+local A_1 =
+{
+[1] = "+BT1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+BT2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+BT3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
+end)
+
+s:Toggle("Auto fist",function(bool)
+    shared.toggle = bool
+   while true do
+wait()
+local A_1 =
+{
+[1] = "+FS1"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+FS2"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+wait()
+local A_1 =
+{
+[1] = "+FS3"
+}
+local Event = game.ReplicatedStorage.RemoteEvent
+Event:FireServer(A_1)
+end
+end)
+
 r:Toggle("Auto Daimonds",function(bool)
     shared.toggle = bool
     for i,v in pairs(game.Workspace.DIAMONDS:GetDescendants()) do
@@ -43,136 +178,6 @@ end)
 
 n:Button("Inf yeild",function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
-end)
- 
- s:Button("psy",function()
-    while true do
-wait()
-local A_1 =
-{
-[1] = "+PP1"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+PP2"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+PP3"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-end
-end)
-
- s:Button("jump",function()
-     while true do
-wait()
-local A_1 =
-{
-[1] = "+JF2"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+JF3"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+JF1"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-end
-end)
-
- s:Button("speed",function()
-     while true do
-wait()
-local A_1 =
-{
-[1] = "+MS1"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+MS2"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+MS3"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-end
-end)
- 
-s:Button("body",function()
-    while true do
-wait()
-local A_1 =
-{
-[1] = "+BT1"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+BT2"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+BT3"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-end
-end)
-
-s:Button("fist",function()
-   while true do
-wait()
-local A_1 =
-{
-[1] = "+FS1"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+FS2"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-wait()
-local A_1 =
-{
-[1] = "+FS3"
-}
-local Event = game.ReplicatedStorage.RemoteEvent
-Event:FireServer(A_1)
-end
 end)
 
 a:Button("SilentAim",function()
