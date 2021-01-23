@@ -1,16 +1,3 @@
-_G.MainColor "blue"
-_G.SecondaryColor
-_G.TertiaryColor
-_G.ArrowColor
-_G.MainTextColor
-_G.PointerColor
-_G.ButtonTextColor
-_G.SliderColor
-_G.ButtonColor
-_G.ToggleColor
-_G.DraggerCircleColor
-_G.BindColor
-
             local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
  
 local w = library:CreateWindow("Korke.ml") -- Creates the window
