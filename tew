@@ -15,10 +15,6 @@ _G.BindColor = Color3.fromRGB(141, 0, 251)
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
  
 local w = library:CreateWindow("Korke.ml") -- Creates the window
-
-local m = library:CreateWindow("Misc") -- Creates the window
-
-local h = m:CreateFolder("Misc") -- Creates the folder(U will put here your buttons,etc)
  
 local b = w:CreateFolder("Arsenal") -- Creates the folder(U will put here your buttons,etc)
 
@@ -31,40 +27,7 @@ local n = w:CreateFolder("Admin") -- Creates the folder(U will put here your but
 local s = w:CreateFolder("Superpowertraining") -- Creates the folder(U will put here your buttons,etc)
 
 local r = w:CreateFolder("Royalhigh") -- Creates the folder(U will put here your buttons,etc)
- 
-h:DestroyGui() --pretty self explanatory and useful, it will destroy the gui but it wont kill any functions already running (i think)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---Scripts
---This is what I do when I make a gui, i usually separate the loop scripts from  the toggle.
---Note: I DONT THINK this applies the the "button" (loops should work with the button)
---Toggle Example: (with loops or wutever)
-while wait(1) do
-   if autoQuest == true then
-       local args = {
-           [1] = "GamesReborn"
-       }
-       game:GetService("ReplicatedStorage").Functions.Quest:InvokeServer(unpack(args))
-       local args = {
-           [1] = "GamesReborn"
-       }
-       game:GetService("ReplicatedStorage").Events.Quest:FireServer(unpack(args))
-   end
-end
 
-h:Label("Credits to Korke#5382",{
-    TextSize  = 15; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor   = Color3.fromRGB(69,69,69); -- Self Explaining
-    
-}) 
-
-b:Label("Korke.ml",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
-}) 
- 
 n:Button("Inf yeild",function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
 end)
