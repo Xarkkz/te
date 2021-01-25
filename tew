@@ -181,7 +181,7 @@ b:Button("silent aim",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/DUeHdyvk", true))()
 end)
  
-a:Button("Auto collect candy",function()
+a:Button("Auto collect Credits",function()
 workspace.Eggs.ChildAdded:connect(function(v)
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
