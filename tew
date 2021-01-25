@@ -344,6 +344,8 @@ end
 loadstring(game:HttpGet(("https://pastebin.com/raw/nd6LR9gg"),true))()
 end)
 
+local p = library:CreateWindow("Misc") -- Creates the window
+
 --[[ 2)Refresh it using the function
 yourvariable:Refresh(yourtable)
 How to refresh a label:
