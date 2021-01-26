@@ -1,3 +1,18 @@
+-- prints
+
+print("Thank you for using Korke.ml")
+print("Made by Korke https://www.youtube.com/channel/UCNDObyaH23TwYZeRYRtOCSw")
+
+
+
+-- notify
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "Loaded GUI!";
+            Text = "Korke.ml has been loaded...";
+ })
+
+
 _G.MainColor = Color3.fromRGB(141, 0, 251) -- 0,0,0 are just RGB colors and u can usually get them from a hex wheel or wutever im pretty sure u already know that
 _G.SecondaryColor = Color3.fromRGB(5,5,5)
 _G.TertiaryColor = Color3.fromRGB(15, 15, 15)
